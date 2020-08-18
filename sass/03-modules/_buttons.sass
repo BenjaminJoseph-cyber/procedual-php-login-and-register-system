@@ -1,0 +1,24 @@
+/* Buttons */
+
+.btn
+  padding: .5rem 1rem
+  border: 1px solid transparent
+  text-transform: uppercase
+  cursor: pointer
+  display: inline-block
+
+  &:disabled
+    cursor: default
+
+  +res(768px)
+    font-size: .7rem
+    padding: .3rem
+
+  &.btn-basic
+    background: $white
+    color: $green
+
+    &:hover
+      background: $green
+      color: $white
+      border-color: $green

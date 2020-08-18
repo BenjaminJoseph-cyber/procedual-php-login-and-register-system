@@ -1,0 +1,41 @@
+/* Main */
+
+main
+  width: 300px
+  color: $white
+  box-shadow: 0 0 1rem darken($green, 10)
+
+  .header
+    display: grid
+    grid-template-columns: 1fr 1fr
+    user-select: none
+
+    span
+      padding: 1rem
+      background: darken($green, 10)
+      cursor: pointer
+      margin: 0
+      text-align: center
+
+      &.active,
+      &:hover
+        background: $white
+        color: $black
+
+  .body
+    padding: 1rem
+    text-align: center
+    background: darken($green, 10)
+
+    form
+      text-align: left
+
+      label
+        padding: 1rem 0
+        display: block
+        cursor: pointer
+
+      .btn
+        padding: .5rem 1rem
+        margin: 2rem 0
+        width: 100%
